@@ -1,0 +1,61 @@
+--- ps3.orig.mk	2012-05-01 09:20:06.486172300 +0800
++++ ps3.new.mk	2012-05-01 09:40:48.436567000 +0800
+@@ -3,6 +3,7 @@
+ SFO := $(PSL1GHT)/host/bin/sfo.py
+ PKG := $(PSL1GHT)/host/bin/pkg.py
+ ICON0 := $(TOPDIR)/support/ps3icon.png
++FONT := $(TOPDIR)/support/font.ttf
+ APPID		:=	HTSS00003
+ CONTENTID	:=	UP0001-$(APPID)_00-0000000000000000
+ 
+@@ -42,35 +43,42 @@
+ 	@mkdir -p $(BUILDDIR)/pkg/USRDIR
+ 	make_self_npdrm $< $@ $(CONTENTID)
+ 
+-$(BUILDDIR)/showtime.pkg: $(BUILDDIR)/pkg/USRDIR/EBOOT.BIN $(BUILDDIR)/pkg/USRDIR/showtime.self
++$(BUILDDIR)/showtime_340.pkg: $(BUILDDIR)/pkg/USRDIR/EBOOT.BIN $(BUILDDIR)/pkg/USRDIR/showtime.self
+ 	cp $(ICON0) $(BUILDDIR)/pkg/ICON0.PNG
++	cp $(FONT) $(BUILDDIR)/pkg/USRDIR/FONT.TTF
+ 	$(SFO) --title "$(TITLE)" --appid "$(APPID)" -f $(SFOXML) $(BUILDDIR)/pkg/PARAM.SFO
+ 	$(PKG) --contentid $(CONTENTID) $(BUILDDIR)/pkg/ $@
+ 
+-$(BUILDDIR)/showtime_geohot.pkg: $(BUILDDIR)/showtime.pkg  support/ps3.mk
++$(BUILDDIR)/showtime_355.pkg: $(BUILDDIR)/showtime_340.pkg  support/ps3.mk
+ 	cp $< $@
+ 	package_finalize $@
+ 
+-pkg: $(BUILDDIR)/showtime.pkg $(BUILDDIR)/showtime_geohot.pkg
++pkg: $(BUILDDIR)/showtime_340.pkg $(BUILDDIR)/showtime_355.pkg
+ self: ${SELF}
+ 
+-install: $(BUILDDIR)/showtime.pkg
+-	cp $< $(PS3INSTALL)/showtime.pkg
++$(PS3INSTALL)/showtime_340.pkg: $(BUILDDIR)/showtime_340.pkg
++	cp $< $@
+ 	sync
+ 
++$(PS3INSTALL)/showtime_355.pkg: $(BUILDDIR)/showtime_355.pkg
++	cp $< $@
++	sync
++
++install: $(PS3INSTALL)/showtime_340.pkg $(PS3INSTALL)/showtime_355.pkg
++
+ $(BUILDDIR)/dist/showtime-$(VERSION).self: ${SELF}
+ 	@mkdir -p $(dir $@)
+ 	cp $< $@
+ 
+-$(BUILDDIR)/dist/showtime-$(VERSION).pkg: $(BUILDDIR)/showtime.pkg
++$(BUILDDIR)/dist/showtime-$(VERSION)_340.pkg: $(BUILDDIR)/showtime_340.pkg
+ 	@mkdir -p $(dir $@)
+ 	cp $< $@
+ 
+-$(BUILDDIR)/dist/showtime_geohot-$(VERSION).pkg: $(BUILDDIR)/showtime_geohot.pkg
++$(BUILDDIR)/dist/showtime-$(VERSION)_355.pkg: $(BUILDDIR)/showtime_355.pkg
+ 	@mkdir -p $(dir $@)
+ 	cp $< $@
+ 
+-dist:  $(BUILDDIR)/dist/showtime-$(VERSION).self $(BUILDDIR)/dist/showtime-$(VERSION).pkg $(BUILDDIR)/dist/showtime_geohot-$(VERSION).pkg
++dist:  $(BUILDDIR)/dist/showtime-$(VERSION).self $(BUILDDIR)/dist/showtime-$(VERSION)_340.pkg $(BUILDDIR)/dist/showtime-$(VERSION)_355.pkg
+ 
+ upgrade: ${SELF}
+ 	curl --data-binary @$< http://$(PS3HOST):42000/showtime/replace

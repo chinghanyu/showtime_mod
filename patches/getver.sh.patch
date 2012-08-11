@@ -1,0 +1,9 @@
+--- getver.sh	2012-04-23 15:43:43.881467200 +0800
++++ getver.sh	2012-04-23 15:41:17.423090200 +0800
+@@ -1,5 +1,5 @@
+ #!/bin/sh
+-revision=`cd "$1" && git describe --dirty --abbrev=5 2>/dev/null | sed  -e 's/-/./g'`
++revision=`cd "$1" && git describe --dirty --abbrev=5 2>/dev/null | sed  -e 's/-/./g' | sed -e 's/dirty/cassine/g'`
+ 
+ if ! test $revision; then
+     test $revision || revision=`cd "$1" && git describe --abbrev=5 2>/dev/null | sed  -e 's/-/./g'`
