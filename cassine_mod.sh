@@ -25,7 +25,7 @@ cd $CURRENT_DIR
 # reconfigure building environment
 echo "Reconfiguring..."
 cd $SHOWTIME_DIR
-#./configure.ps3 --release --cleanbuild --ccache
+./configure.ps3 --release --cleanbuild --ccache
 cd $CURRENT_DIR
 
 # patch cassine's modification: version string, OX key assignment, and font file
