@@ -448,6 +448,9 @@ msg: 日期
 id: Filename
 msg: 檔案名稱
 
+id: Show only supported files
+msg: 只顯示支援的檔案
+
 id: Sort folders first
 msg: 優先顯示目錄
 
