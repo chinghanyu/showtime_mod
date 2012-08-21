@@ -1,6 +1,6 @@
 --- glw_ps3.c	2012-08-16 22:48:01.983833300 -0400
 +++ glw_ps3.c	2012-08-16 23:15:36.458463900 -0400
-@@ -569,8 +569,10 @@
+@@ -571,8 +571,10 @@
    [BTN_UP]         = AVEC(ACTION_UP),
    [BTN_RIGHT]      = AVEC(ACTION_RIGHT),
    [BTN_DOWN]       = AVEC(ACTION_DOWN),

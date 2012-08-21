@@ -556,11 +556,17 @@ msg: 視訊縮放
 id: Automatic
 msg: 自動
 
+id: Custom search query
+msg: 自訂搜尋
+
 id: Embedded in file
 msg: 檔案內容(Embedded in file)
 
 id: Enabled
 msg: 啟用
+
+id: IMDb ID
+msg: IMDb ID
 
 id: Metadata
 msg: 標記資訊
@@ -568,11 +574,20 @@ msg: 標記資訊
 id: Metadata configuration and provider settings
 msg: 標記資訊與提供商設定
 
+id: Metadata loaded from '%s' using %s
+msg: 自 %s 透過 %s 載入標記資訊
+
+id: Metadata search
+msg: 標記資料搜尋
+
 id: Metadata source
-msg: 標記來源
+msg: 標記資訊來源
 
 id: Movie
 msg: 電影
+
+id: No data found
+msg: 查無資料
 
 id: Providers for Movies
 msg: 電影提供商
@@ -580,8 +595,20 @@ msg: 電影提供商
 id: Providers for Music
 msg: 音樂提供商
 
+id: Refresh metadata
+msg: 更新標記資料
+
 id: Track %d
 msg: 第 %d 軌
+
+id: custom query
+msg: 自訂查詢
+
+id: filename
+msg: 檔案名稱
+
+id: folder name
+msg: 目錄名稱
 
 #
 # ./src/navigator.c
