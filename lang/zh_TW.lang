@@ -745,6 +745,9 @@ msg: 區域網路
 id: Applications and installed plugins
 msg: 應用程式與擴充功能
 
+id: Developer settings
+msg: 開發者設定
+
 id: Discovered media sources
 msg: 搜尋到的媒體來源
 
@@ -753,6 +756,9 @@ msg: 通用設定
 
 id: Global settings
 msg: 設定
+
+id: Settings useful for developers
+msg: 開發者相關設定
 
 id: System related settings
 msg: 系統設定
@@ -798,6 +804,27 @@ msg: 立即套用此一模式
 
 id: Video modes
 msg: 視訊模式
+
+#
+# ./src/upgrade.c
+#
+id: Automatically check for upgrades
+msg: 自動檢查更新
+
+id: Check for updates now
+msg: 立即檢查更新
+
+id: Software upgrade
+msg: 軟體更新
+
+id: Stable
+msg: 穩定版本
+
+id: Testing
+msg: 測試版本
+
+id: Upgrade to releases from
+msg: 更新自
 
 #
 # ./src/upnp/upnp.c
