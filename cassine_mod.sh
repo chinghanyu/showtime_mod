@@ -30,7 +30,7 @@ cd $CURRENT_DIR
 
 # patch cassine's modification: version string, OX key assignment, and font file
 echo "Applying patches..."
-patch $SHOWTIME_DIR/src/arch/arch_ps3.c -p0 < $CURRENT_DIR/patches/arch_ps3.c.patch
+patch $SHOWTIME_DIR/src/arch/ps3/ps3_main.c -p0 < $CURRENT_DIR/patches/ps3_main.c.patch
 patch $SHOWTIME_DIR/support/getver.sh -p0 < $CURRENT_DIR/patches/getver.sh.patch
 patch $SHOWTIME_DIR/src/ui/glw/glw_ps3.c -p0 < $CURRENT_DIR/patches/glw_ps3.c.patch
 patch $SHOWTIME_DIR/support/ps3.mk -p0 < $CURRENT_DIR/patches/ps3.mk.patch

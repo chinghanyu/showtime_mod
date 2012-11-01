@@ -2,52 +2,79 @@
 native: 正體中文
 maintainer: Chinghan Yu<cassine.bbs@ptt.cc>
 #
-# ./glwthemes/mono/commandmenu/cmd_root.view
+# ./glwskins/default/cmdmenu.view
 #
-id: Audio settings
-msg: 音訊設定
+id: Add current page to bookmarks
+msg: 將本頁加入書籤
 
-id: Languages
-msg: 語言
+id: Open settings
+msg: 開啟設定
 
-id: Settings
-msg: 設定
-
-id: Subtitle settings
-msg: 字幕設定
-
-id: Video settings
-msg: 視訊設定
+id: Remove current page from bookmarks
+msg: 將本頁自書籤中移除
 
 #
-# ./glwthemes/mono/directoryviews/infobox/audio.view
+# ./glwskins/default/cmdmenu/cmdmenu_common.view
 #
-id: Added by: %s
-msg: 添加人： %s
+id: Exit Showtime
+msg: 結束 Shotime
 
-id: Played %d times
-msg[0]: 已播放 %d 次
-msg[1]: 已播放 %d 次
+id: Go to Home screen
+msg: 前往首頁
+
+id: Navigation
+msg: 導覽
+
+id: Open Settings
+msg: 開啟設定
+
+id: Playqueue
+msg: 播放佇列
+
+id: Power off
+msg: 關機
+
+id: Reload current page
+msg: 重新載入頁面
+
+id: Suspend
+msg: 待命
+
+id: System
+msg: 系統
 
 #
-# ./glwthemes/mono/directoryviews/list2/center_directory.view
+# ./glwskins/default/cmdmenu/cmdmenu_dir.view
 #
-id: %d entries
-msg[0]: %d 個項目
-msg[1]: %d 個項目
+id: Add '%s' to home screen
+msg: 將 %s 加入首頁
+
+id: Remove '%s' from home screen
+msg: 將 %s 自首頁移除
 
 #
-# ./glwthemes/mono/directoryviews/list2/center_playlist.view
+# ./glwskins/default/cmdmenu/cmdmenu_item.view
 #
-id: %d tracks
-msg[0]: %d 條音軌
-msg[1]: %d 條音軌
+id: Continue from %s
+msg: 自 %s 繼續
 
-#
-# ./glwthemes/mono/directoryviews/list2/options_audio.view
-#
+id: Continue playback here
+msg: 繼續播放
+
 id: Delete
 msg: 刪除
+
+id: Mark as seen
+msg: 設為已播放
+
+id: Mark as unseen
+msg: 設為未播放
+
+id: Play from beginning
+msg: 自起始處播放
+
+id: Play until end of list
+msg: 繼續播映
 
 id: Queue
 msg: 佇列
@@ -59,31 +86,49 @@ id: Unstar
 msg: 取消評價
 
 #
-# ./glwthemes/mono/include/buttons.view
+# ./glwskins/default/cmdmenu/cmdmenu_video.view
 #
-id: Off
-msg: 關閉
+id: Audio
+msg: 音訊
 
-id: On
-msg: 開啟
+id: Audio settings
+msg: 音訊設定
+
+id: Audio tracks
+msg: 音軌
+
+id: Seek by time
+msg: 按時間軸搜尋
+
+id: Settings
+msg: 設定
+
+id: Subtitle settings
+msg: 字幕設定
+
+id: Subtitle tracks
+msg: 字幕軌
+
+id: Subtitles
+msg: 字幕
+
+id: Video
+msg: 視訊
+
+id: Video menu
+msg: 視訊選單
+
+id: Video settings
+msg: 視訊設定
 
 #
-# ./glwthemes/mono/include/infobox.view
+# ./glwskins/default/log.view
 #
-id: Enqueue
-msg: 加入佇列
+id: System log
+msg: 系統紀錄
 
 #
-# ./glwthemes/mono/include/popup.view
-#
-id: Cancel
-msg: 取消
-
-id: OK
-msg: 確定
-
-#
-# ./glwthemes/mono/pages/about.view
+# ./glwskins/default/pages/about.view
 #
 id: Allocated by application: %d kB
 msg: 程式使用： %d kB
@@ -137,67 +182,226 @@ id: Windowmanager: %s
 msg: 視窗管理員： %s
 
 #
-# ./glwthemes/mono/pages/about_top.view
+# ./glwskins/default/pages/directory.view
 #
-id: About
-msg: 關於
+id: Album
+msg: 專輯
+
+id: Artist
+msg: 演出者
+
+id: Custom
+msg: 自訂
+
+id: Images
+msg: 圖片
+
+id: List
+msg: 列表
+
+id: Slideshow
+msg: 投影片播映
+
+id: Tvchannels
+msg: 電視頻道
+
+id: View
+msg: 檢視
 
 #
-# ./glwthemes/mono/pages/home_top.view
+# ./glwskins/default/pages/discovered.view
 #
-id: Home
-msg: 首頁
+id: Discovered resources on local network
+msg: 搜尋本地網路上的資源
 
 #
-# ./glwthemes/mono/pages/openerror.view
+# ./glwskins/default/pages/home.view
+#
+id: Tiled
+msg: 排列
+
+#
+# ./glwskins/default/pages/home_clist.view
+#
+id: About Showtime
+msg: 關於 Showtime
+
+id: Dismiss
+msg: 解散
+
+id: Plugins
+msg: 外掛程式
+
+#
+# ./glwskins/default/pages/iteminfo/image.view
+#
+id: Camera: 
+msg: 相機：
+
+id: Date: 
+msg: 日期：
+
+#
+# ./glwskins/default/pages/iteminfo/plugin.view
+#
+id: Author: 
+msg: 作者：
+
+id: Available version: 
+msg: 最新版本：
+
+id: Installed version: 
+msg: 安裝版本：
+
+id: Showtime %s or newer is required
+msg: 僅支援 Showtime %s 以上版本
+
+#
+# ./glwskins/default/pages/iteminfo/video.view
+#
+id: Duration:
+msg: 長度：
+
+id: File date:
+msg: 檔案日期：
+
+id: Genre:
+msg: 風格：
+
+id: Metadata from
+msg: 標記資料來源
+
+id: Rating:
+msg: 評價
+
+id: Year:
+msg: 年份
+
+#
+# ./glwskins/default/pages/listitems/add.view
+#
+id: Add new entry
+msg: 新增項目
+
+#
+# ./glwskins/default/pages/listitems/bool.view
+#
+id: No
+msg: 否
+
+id: Yes
+msg: 是
+
+#
+# ./glwskins/default/pages/listitems/font.view
+#
+id: Condensed
+msg: 縮短
+
+id: Main
+msg: 主要
+
+id: Subs
+msg: 次要
+
+#
+# ./glwskins/default/pages/listitems/plugin.view
+#
+id: Install
+msg: 安裝
+
+id: Uninstall
+msg: 移除
+
+id: Upgrade
+msg: 更新
+
+#
+# ./glwskins/default/pages/openerror.view
 #
 id: Unable to open resource
 msg: 無法開啟資源
 
 #
-# ./glwthemes/mono/pages/openerror_top.view
-#
-id: Page load error
-msg: 頁面載入錯誤
-
-#
-# ./glwthemes/mono/pages/playqueue_top.view
-#
-id: Playqueue
-msg: 播放佇列
-
-#
-# ./glwthemes/mono/pages/video.view
-#
-id: Playback status
-msg: 影片資訊
-
-id: Unable to start video playback
-msg: 影片無法播放
-
-#
-# ./glwthemes/mono/playdecks/dvd.view
-#
-id: Chapter %d / %d
-msg: 章節 %d / %d
-
-id: Title %d / %d
-msg: 標題 %d / %d
-
-#
-# ./glwthemes/mono/playdecks/tracks.view
+# ./glwskins/default/pages/playqueue.view
 #
 id: Track %d / %d
 msg: 音軌 %d / %d
 
 #
-# ./glwthemes/mono/playdecks/video.view
+# ./glwskins/default/pages/upgrade.view
+#
+id: An error occured during download
+msg: 下載過程發生錯誤
+
+id: Available version:
+msg: 最新版本：
+
+id: Changelog for %s releases
+msg: %s 版本的更新紀錄
+
+id: Check for updates now
+msg: 立即檢查更新
+
+id: Checking for updates...
+msg: 正在檢查更新…
+
+id: Current version:
+msg: 目前版本
+
+id: Download and install...
+msg: 下載並安裝
+
+id: Downloading...
+msg: 正在下載…
+
+id: Installing...
+msg: 正在安裝…
+
+id: New version %s is available for download
+msg: 已有 %s 版更新可供下載
+
+id: No upgrade available
+msg: 尚未有任何更新
+
+id: Restarting Showtime in %d seconds...
+msg: 將於 %s 秒後重新載入 Showtime
+
+id: Retry...
+msg: 正在重試…
+
+id: Showtime is up to date
+msg: Showtime 已是最新版本
+
+id: Stable
+msg: 穩定版本
+
+id: Testing
+msg: 測試版本
+
+id: Unable to query for new version
+msg: 無法查詢最新版本
+
+#
+# ./glwskins/default/pages/video.view
 #
 id: CPU is too slow to decode this video
 msg: 處理器速度過慢，無法正常解碼視訊信號
 
+id: Playback status
+msg: 影片資訊
+
 #
-# ./glwthemes/mono/popups/auth.view
+# ./glwskins/default/playdecks/dvd.view
+#
+id: Chapter: %d
+msg: 章節： %d
+
+id: Title: %d
+msg: 標題： %d
+
+#
+# ./glwskins/default/popups/auth.view
 #
 id: Domain
 msg: 登入網域
@@ -212,49 +416,34 @@ id: Username
 msg: 使用者帳號
 
 #
-# ./glwthemes/mono/screensaver.view
+# ./glwskins/default/popups/common.view
+#
+id: Cancel
+msg: 取消
+
+id: OK
+msg: 確定
+
+#
+# ./glwskins/default/screensaver.view
 #
 id: No media loaded
 msg: 未載入任何媒體
 
 #
-# ./glwthemes/mono/sysinfo.view
+# ./glwskins/default/sysinfo.view
 #
-id: Audio output
-msg: 音訊輸出
-
-id: CPUs
-msg: 中央處理器
-
-id: GPU & Display
-msg: 視訊處理器與顯示器
-
-id: GPU Core temperature: %d / %d °
-msg: 視訊處理器核心溫度： %d / %d °
+id: Memory usage:
+msg: 記憶體使用量：
 
 #
-# ./glwthemes/mono/universe.view
+# ./glwskins/default/universe.view
 #
-id: Adjust background tint based on daytime
-msg: 依照系統時間調整背景色彩
-
-id: Alternate list layout
-msg: 替換列表式樣
-
 id: Audio muted
 msg: 靜音模式
 
-id: Fancy UI animations
-msg: 動態使用者介面
-
 id: Master volume: %d dB
 msg: 主音量： %d dB
-
-id: Multilingual 'No media loaded'
-msg: 未載入任何媒體
-
-id: Top bar navigation buttons
-msg: 頂部導覽列
 
 #
 # ./src/api/opensubtitles.c
@@ -266,7 +455,16 @@ id: Use opensubtitles.org
 msg: 啟用 opensubtitles.org
 
 #
-# ./src/arch/arch_ps3.c
+# ./src/api/tmdb.c
+#
+id: Language (ISO 639-1 code)
+msg: 語言（ISO 639-1 標準）
+
+id: Use original title
+msg: 使用原始標題
+
+#
+# ./src/arch/ps3/ps3_main.c
 #
 id: System is low on memory (%d kB RAM available)
 msg: 系統記憶體不足（剩餘 %d kB 可用）
@@ -274,6 +472,9 @@ msg: 系統記憶體不足（剩餘 %d kB 可用）
 #
 # ./src/audio/audio.c
 #
+id: Audio output
+msg: 音訊輸出
+
 id: Audio/Video sync delay
 msg: 視訊／音訊同步延遲
 
@@ -340,11 +541,17 @@ msg: %s 的搜尋結果：
 #
 # ./src/backend/spotify/spotify.c
 #
+id: Albums
+msg: 專輯
+
 id: Automatic login when Showtime starts
 msg: 啟動 Showtime 時自動登入
 
 id: Collaborative
 msg: 協作列表
+
+id: Compilations
+msg: 編輯
 
 id: Enable Spotify
 msg: 啟用 Spotify
@@ -381,6 +588,9 @@ msg: 重新登入（切換使用者）
 
 id: Search result
 msg: 搜尋結果
+
+id: Singles
+msg: 單曲
 
 id: Spotify friends
 msg: Spotify 聯絡人
@@ -478,6 +688,9 @@ msg: 語言
 id: Language codes should be configured as three character ISO codes, example (eng, swe, fra)
 msg: 語言代碼必須符合 ISO 三碼標準（範例：eng, chi）
 
+id: Languages
+msg: 語言
+
 id: Preferred languages
 msg: 設定偏好語言
 
@@ -559,6 +772,9 @@ msg: 自動
 id: Custom search query
 msg: 自訂搜尋
 
+id: Custom title
+msg: 自訂標題
+
 id: Embedded in file
 msg: 檔案內容(Embedded in file)
 
@@ -589,11 +805,14 @@ msg: 電影
 id: No data found
 msg: 查無資料
 
-id: Providers for Movies
-msg: 電影提供商
+id: None
+msg: 無資料
 
 id: Providers for Music
 msg: 音樂提供商
+
+id: Providers for Video
+msg: 影片提供商
 
 id: Refresh metadata
 msg: 更新標記資料
@@ -601,14 +820,32 @@ msg: 更新標記資料
 id: Track %d
 msg: 第 %d 軌
 
+id: custom IMDb ID
+msg: 自訂 IMDb ID
+
 id: custom query
 msg: 自訂查詢
 
 id: filename
 msg: 檔案名稱
 
+id: filename as TV episode
+msg: 以電視影集名稱作為檔案名稱
+
 id: folder name
 msg: 目錄名稱
+
+#
+# ./src/metadata/metadb.c
+#
+id: %d items deleted
+msg: 已刪除 %d 個物件
+
+id: Clear all metadata
+msg: 清除所有中繼資料
+
+id: Clearing all metadata means losing <b>all</b> information about:\n\nIf a track/movie has been seen\nNumber of times a track/movie has been played\nPlayback resume position\n\nIt will also erase the metadata cached from external sources such as themoviedb.org, etc\n\nAre you sure you proceed?
+msg: 清除所有中繼資料時，將會清除<b>所有</b>關於：\n\n已經播放過的音軌、電影紀錄\n音軌、電影的播放次數\n多媒體檔案的中繼播放位置\n此外，來自外部來源，例如 themovie.org 的中繼資料也將一併被移除\n\n請問您是否要移除中繼資料？
 
 #
 # ./src/navigator.c
@@ -646,12 +883,12 @@ msg: 類型
 id: URL
 msg: 網址
 
-id: Video
-msg: 視訊
-
 #
 # ./src/plugins.c
 #
+id: Alternate plugin Repository URL
+msg: 變更外掛程式來源伺服器
+
 id: Automatically upgrade plugins
 msg: 自動更新外掛程式
 
@@ -660,6 +897,9 @@ msg: 可用的外掛程式
 
 id: Browse available plugins
 msg: 瀏覽可用的外掛程式
+
+id: Cloud services
+msg: 雲端服務
 
 id: Corrupt plugin bundle
 msg: 外掛封裝損壞
@@ -679,8 +919,8 @@ msg: 已安裝的外掛程式
 id: Installing
 msg: 正在安裝
 
-id: Invalud URI
-msg: 不正確的 URI 位址
+id: Music streaming
+msg: 音訊串流
 
 id: Not installable
 msg: 無法安裝
@@ -691,14 +931,17 @@ msg: 未安裝
 id: Not upgradable
 msg: 無法更新
 
-id: Plugins
-msg: 外掛程式
+id: Online TV
+msg: 網路電視
 
 id: Unable to load plugin.json: %s
 msg: 無法載入 plugin.json ： %s
 
 id: Unable to load plugin.json: Malformed JSON
 msg: 無法載入 plugin.json ： JSON 檔案格式不正確
+
+id: Uncategorized
+msg: 未分類
 
 id: Up to date
 msg: 已經是最新版本
@@ -708,6 +951,12 @@ msg: 已有新的更新
 
 id: Upgraded plugin %s to version %s
 msg: 外掛程式 %s 已更新至 %s 版
+
+id: User interface extensions
+msg: 使用者介面延伸
+
+id: Video streaming
+msg: 視訊串流
 
 #
 # ./src/runcontrol.c
@@ -764,6 +1013,27 @@ id: System related settings
 msg: 系統設定
 
 #
+# ./src/text/fontstash.c
+#
+id: Narrow text
+msg: 狹窄字串
+
+id: Unable to load %s -- %s
+msg: 無法載入 %s － %s
+
+id: Unable to open %s for writing
+msg: 無法開啟 %s 檔案供寫入
+
+id: Unable to write to %s
+msg: 無法寫入 %s 檔案
+
+id: Use font %s for
+msg: 套用字型 %s 至
+
+id: User interface
+msg: 使用者介面
+
+#
 # ./src/ui/glw/glw.c
 #
 id: Display and user interface
@@ -808,20 +1078,17 @@ msg: 視訊模式
 #
 # ./src/upgrade.c
 #
-id: Automatically check for upgrades
-msg: 自動檢查更新
+id: Notify about upgrades
+msg: 有更新時通知我
 
-id: Check for updates now
-msg: 立即檢查更新
+id: Open download page
+msg: 開啟下載頁面
+
+id: Showtime version %s is available
+msg: Showtime 版本 %s 已經可以下載了
 
 id: Software upgrade
 msg: 軟體更新
-
-id: Stable
-msg: 穩定版本
-
-id: Testing
-msg: 測試版本
 
 id: Upgrade to releases from
 msg: 更新自
@@ -919,11 +1186,11 @@ msg: 左側
 id: Maximum resolution for deinterlacer
 msg: 去交錯器支援的最大解析度
 
-id: No
-msg: 否
-
 id: No limit
 msg: 無限制
+
+id: Off
+msg: 關閉
 
 id: Outline color
 msg: 外框色彩
@@ -964,9 +1231,6 @@ msg: 字幕大小及位置
 id: Subtitle styling
 msg: 字幕樣式
 
-id: Subtitles
-msg: 字幕
-
 id: Temporal
 msg: 時間優先
 
@@ -978,7 +1242,4 @@ msg: 視訊加速與顯示模式
 
 id: Video playback
 msg: 視訊播放
-
-id: Yes
-msg: 是
 

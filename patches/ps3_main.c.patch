@@ -1,0 +1,32 @@
+--- ps3_main.c	2012-10-21 21:53:25.874547100 -0400
++++ ps3_main.c	2012-10-22 21:05:58.828722900 -0400
+@@ -430,16 +430,19 @@
+ static void
+ preload_fonts(void)
+ {
+-  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-VR-R-LATIN2.TTF",
+-		     FONT_DOMAIN_FALLBACK, NULL);
+-  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-NR-R-JPN.TTF",
+-		     FONT_DOMAIN_FALLBACK, NULL);
+-  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-YG-R-KOR.TTF",
+-		     FONT_DOMAIN_FALLBACK, NULL);
+-  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-DH-R-CGB.TTF",
+-		     FONT_DOMAIN_FALLBACK, NULL);
+-  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-CP-R-KANA.TTF",
+-		     FONT_DOMAIN_FALLBACK, NULL);
++/*  freetype_load_font("file:///dev_flash/data/font/SCE-PS3-VR-R-LATIN2.TTF",
++ *		     FONT_DOMAIN_FALLBACK, NULL);
++ * freetype_load_font("file:///dev_flash/data/font/SCE-PS3-NR-R-JPN.TTF",
++ *		     FONT_DOMAIN_FALLBACK, NULL);
++ * freetype_load_font("file:///dev_flash/data/font/SCE-PS3-YG-R-KOR.TTF",
++ *		     FONT_DOMAIN_FALLBACK, NULL);
++ * freetype_load_font("file:///dev_flash/data/font/SCE-PS3-DH-R-CGB.TTF",
++ *		     FONT_DOMAIN_FALLBACK, NULL);
++ * freetype_load_font("file:///dev_flash/data/font/SCE-PS3-CP-R-KANA.TTF",
++ *		     FONT_DOMAIN_FALLBACK, NULL);
++ */
++  freetype_load_font("file:///dev_hdd0/game/HTSS00003/USRDIR/FONT.TTF",
++			 FONT_DOMAIN_FALLBACK, NULL);
+ }
+ 
+ const char *

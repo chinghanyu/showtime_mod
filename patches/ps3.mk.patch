@@ -1,6 +1,6 @@
 --- ps3.orig.mk	2012-05-01 09:20:06.486172300 +0800
 +++ ps3.new.mk	2012-05-01 09:40:48.436567000 +0800
-@@ -3,6 +3,7 @@
+@@ -19,6 +19,7 @@
  SFO := $(PSL1GHT)/host/bin/sfo.py
  PKG := $(PSL1GHT)/host/bin/pkg.py
  ICON0 := $(TOPDIR)/support/ps3icon.png
@@ -8,7 +8,7 @@
  APPID		:=	HTSS00003
  CONTENTID	:=	UP0001-$(APPID)_00-0000000000000000
  
-@@ -42,35 +43,42 @@
+@@ -58,35 +59,42 @@
  	@mkdir -p $(BUILDDIR)/pkg/USRDIR
  	make_self_npdrm $< $@ $(CONTENTID)
  
