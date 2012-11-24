@@ -329,6 +329,12 @@ id: Track %d / %d
 msg: 音軌 %d / %d
 
 #
+# ./glwskins/default/pages/slideshow.view
+#
+id: Paused
+msg: 已暫停
+
+#
 # ./glwskins/default/pages/upgrade.view
 #
 id: An error occured during download
