@@ -1040,7 +1040,7 @@ id: User interface
 msg: 使用者介面
 
 #
-# ./src/ui/glw/glw.c
+# ./src/ui/glw/glw_settings.c
 #
 id: Display and user interface
 msg: 顯示器與使用者介面
@@ -1060,9 +1060,6 @@ msg: 垂直欠掃描
 #
 # ./src/ui/glw/glw_x11.c
 #
-id: Fullscreen mode
-msg: 全螢幕模式
-
 id: Map mouse wheel to up/down
 msg: 滑鼠滾輪捲動
 
