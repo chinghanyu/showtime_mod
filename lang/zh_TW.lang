@@ -856,6 +856,9 @@ msg: 清除所有中繼資料時，將會清除<b>所有</b>關於：\n\n已經�
 #
 # ./src/navigator.c
 #
+id: Add and remove items on homepage
+msg: 新增或移除首頁上的物件
+
 id: Added new bookmark: %s
 msg: 書籤 %s 已經加入
 
@@ -901,14 +904,26 @@ msg: 自動更新外掛程式
 id: Available plugins
 msg: 可用的外掛程式
 
+id: Background
+msg: 背景
+
+id: Beta testing passwords
+msg: 測試用密碼
+
 id: Browse available plugins
 msg: 瀏覽可用的外掛程式
+
+id: Browsing
+msg: 瀏覽
 
 id: Cloud services
 msg: 雲端服務
 
 id: Corrupt plugin bundle
 msg: 外掛封裝損壞
+
+id: Default
+msg: 預設
 
 id: Disk write error
 msg: 無法寫入磁碟
@@ -919,11 +934,26 @@ msg: 正在下載
 id: File open error
 msg: 無法開啟檔案
 
+id: Home page
+msg: 首頁
+
 id: Installed plugins
 msg: 已安裝的外掛程式
 
+id: Installed version higher than available
+msg: 已安裝較新版本
+
 id: Installing
 msg: 正在安裝
+
+id: List of albums
+msg: 專輯列表
+
+id: Loading screen
+msg: 載入畫面
+
+id: Movies
+msg: 電影
 
 id: Music streaming
 msg: 音訊串流
@@ -939,6 +969,15 @@ msg: 無法更新
 
 id: Online TV
 msg: 網路電視
+
+id: Preferred views from plugins
+msg: 外掛程式提供的預覽畫面
+
+id: Screen saver
+msg: 螢幕保護程式
+
+id: TV channels
+msg: 電視頻道
 
 id: Unable to load plugin.json: %s
 msg: 無法載入 plugin.json ： %s
@@ -1006,11 +1045,17 @@ msg: 開發者設定
 id: Discovered media sources
 msg: 搜尋到的媒體來源
 
+id: Fonts and user interface styling
+msg: 字型與使用者介面
+
 id: General
 msg: 通用設定
 
 id: Global settings
 msg: 設定
+
+id: Look and feel
+msg: 外觀
 
 id: Settings useful for developers
 msg: 開發者相關設定
@@ -1042,9 +1087,6 @@ msg: 使用者介面
 #
 # ./src/ui/glw/glw_settings.c
 #
-id: Display and user interface
-msg: 顯示器與使用者介面
-
 id: Horizontal underscan
 msg: 水平欠掃描
 
