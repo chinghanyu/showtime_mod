@@ -1066,8 +1066,26 @@ msg: 系統設定
 #
 # ./src/text/fontstash.c
 #
+id: Defaults
+msg: 預設
+
+id: Fonts
+msg: 字型
+
+id: Installed fonts
+msg: 已安裝字型
+
 id: Narrow text
 msg: 狹窄字串
+
+id: Reset main font to default
+msg: 重設主要字型為預設值
+
+id: Reset narrow font to default
+msg: 重設狹窄字型為預設值
+
+id: Reset subtitle font to default
+msg: 重設字幕字型為預設值
 
 id: Unable to load %s -- %s
 msg: 無法載入 %s － %s
